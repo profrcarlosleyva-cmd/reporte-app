@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reporte Escolar</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+<div id="login-container">
+    <h2>Acceso al Sistema</h2>
+    <input type="password" id="clave" placeholder="Ingrese clave">
+    <button onclick="verificarClave()">Acceder</button>
+    <p id="error"></p>
+</div>
+
+<div id="app-container" style="display:none;">
+    <h2>Generador de Reportes</h2>
+
+    <input type="text" id="alumno" placeholder="Nombre del alumno">
+    <button onclick="guardarAlumno()">Guardar Alumno</button>
+
+    <ul id="listaAlumnos"></ul>
+
+    <button onclick="cerrarSesion()">Cerrar sesión</button>
+</div>
+
+<footer>
+    <b style="color:blue;">Desarrolló: Profr. Carlos Augusto Leyva Linares</b>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
